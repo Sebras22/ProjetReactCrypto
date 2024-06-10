@@ -46,7 +46,7 @@ const CryptoDetail = () => {
 
   return (
     <Container>
-      <Title  my="lg">Historique des Prix de {id}</Title>
+      <Title  my="lg">Historique des prix de {id}</Title>
       {loading ? (
         <Loader size="xl" />
       ) : (
