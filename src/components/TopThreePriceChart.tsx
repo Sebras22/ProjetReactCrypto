@@ -144,7 +144,7 @@ const TopThreeChartList = () => {
 
   return (
     <Container>
-      <Title my="lg">Top 3 Cryptocurrencies Price History</Title>
+      
       {loading ? (
         <Loader size="xl" />
       ) : (
