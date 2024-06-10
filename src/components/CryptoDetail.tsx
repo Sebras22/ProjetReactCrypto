@@ -14,7 +14,7 @@ const CryptoDetail = () => {
         const response = await fetch(`https://api.coincap.io/v2/assets/${id}/history?interval=d1`);
         const result = await response.json();
 
-        // Log the raw result to debug and verify the data structure
+        
         console.log('Raw data from API:', result);
 
         const formattedData = result.data.map((item: { time: number, priceUsd: string }) => ({
@@ -25,7 +25,7 @@ const CryptoDetail = () => {
         // Filtrer pour obtenir uniquement les 5 dernières valeurs
         const recentData = formattedData.slice(-5);
 
-        // Log the filtered data to debug and verify the data structure
+        
         console.log('Filtered data for AreaChart:', recentData);
 
         setData(recentData);
@@ -41,7 +41,7 @@ const CryptoDetail = () => {
     }
   }, [id]);
 
-  // Log data before rendering the chart
+  
   console.log('Data passed to AreaChart:', data);
 
   return (
