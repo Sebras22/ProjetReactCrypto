@@ -140,7 +140,7 @@ const CryptoList = () => {
             </NavLink>
           ))
         ) : (
-          <Text>Aucune donnée disponible</Text>
+          <Text>Aucune crypto en favori actuellement</Text>
         )}
       </Flex>
     </div>
