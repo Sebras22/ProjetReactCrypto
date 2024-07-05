@@ -1,8 +1,8 @@
-// src/components/Shell.tsx
 import { AppShell, Button, Flex, Box, Space } from "@mantine/core";
 import { NavLink, Outlet } from "react-router-dom";
 import { IconList } from "@tabler/icons-react";
 import { IconChartLine } from "@tabler/icons-react";
+import "./Shell.css"
 import { IconChartHistogram } from "@tabler/icons-react";
 
 function Shell() {
@@ -45,6 +45,7 @@ function Shell() {
                 <Box maw={900} w={"95%"} my={"md"} mx={"auto"}>
                     <Outlet />
                 </Box>
+                    <div className="pres"> Developed by <Button variant="light" color="cyan" component="a" href="https://github.com/thomasgrouazel">Thomas Grouazel</Button> & <Button variant="light" color="cyan" component="a" href="https://github.com/Sebras22">Sébastien Branly</Button> </div>
             </AppShell.Main>
         </AppShell>
     );
